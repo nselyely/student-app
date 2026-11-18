@@ -17,6 +17,20 @@ function App() {
     ]);
   };
 
+  const updateStudent = (updatedStudent) => {
+    setStudents((previousStudents) =>
+      previousStudents.map((student) =>
+        student.id === updatedStudent.id ? updatedStudent : student
+      )
+    );
+  };
+
+  const deleteStudent = (studentId) => {
+    setStudents((previousStudents) =>
+      previousStudents.filter((student) => student.id !== studentId)
+    );
+  };
+
   return (
     <HashRouter>
       <Routes>
@@ -28,7 +42,13 @@ function App() {
 
         <Route
           path="/students"
-          element={<ViewStudents students={students} />}
+          element={
+            <ViewStudents
+              students={students}
+              updateStudent={updateStudent}
+              deleteStudent={deleteStudent}
+            />
+          }
         />
 
       </Routes>

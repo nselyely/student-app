@@ -121,6 +121,43 @@ tr:nth-child(even) {
   border-radius: 5px;
 }
 
+.actions {
+  white-space: nowrap;
+}
+
+.table-input {
+  width: 100%;
+  min-width: 150px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.action-button {
+  padding: 8px 12px;
+  margin-right: 6px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.edit-button {
+  background: #2563eb;
+}
+
+.delete-button {
+  background: #dc2626;
+}
+
+.save-button {
+  background: #15803d;
+}
+
+.cancel-button {
+  background: #64748b;
+}
+
 @media (max-width: 600px) {
   .register-card {
     width: 90%;
