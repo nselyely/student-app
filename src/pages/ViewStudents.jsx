@@ -1,6 +1,7 @@
 
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 function ViewStudents({ students, updateStudent, deleteStudent }) {
 
@@ -54,6 +55,11 @@ function ViewStudents({ students, updateStudent, deleteStudent }) {
 
   return (
     <div className="dashboard">
+      <img
+        src={logo}
+        alt="TVET School Management System"
+        className="app-logo dashboard-logo"
+      />
 
       <h1>Registered Students</h1>
 

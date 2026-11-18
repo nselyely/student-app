@@ -32,6 +32,15 @@ body {
   text-align: center;
 }
 
+.app-logo {
+  display: block;
+  width: 220px;
+  max-width: 80%;
+  height: auto;
+  margin: 0 auto 15px;
+  object-fit: contain;
+}
+
 .register-card p {
   text-align: center;
   color: #777;
@@ -80,6 +89,11 @@ body {
 
 .dashboard h1 {
   color: #173b68;
+}
+
+.dashboard-logo {
+  width: 190px;
+  margin-bottom: 20px;
 }
 
 .search-input {

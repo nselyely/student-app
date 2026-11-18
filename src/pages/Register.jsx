@@ -1,6 +1,7 @@
 
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 function Register({ addStudent }) {
 
@@ -38,6 +39,11 @@ function Register({ addStudent }) {
     <div className="register-container">
 
       <div className="register-card">
+        <img
+          src={logo}
+          alt="TVET School Management System"
+          className="app-logo"
+        />
 
         <h1>Student Registration</h1>
         <p>Enter your student information</p>
